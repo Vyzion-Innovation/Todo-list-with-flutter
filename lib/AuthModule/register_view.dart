@@ -1,9 +1,5 @@
-import 'dart:io';
-
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import '../CustomWidgets/constant_widgets.dart';
 import '../CustomWidgets/customTextField.dart';
 import '../CustomWidgets/custom_app_bar.dart';
 import '../Utils/Validator.dart';
@@ -99,7 +95,7 @@ class _RegisterViewState extends State<RegisterView> {
                                 obscureText: false,
                                 MaxLine: 1,
                                 suffixVisibility: false,
-                                icon: new Image.asset(
+                                icon: Image.asset(
                                   "assets/png/arrow.png",
                                   width: 15,
                                   height: 15,

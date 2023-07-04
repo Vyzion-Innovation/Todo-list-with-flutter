@@ -27,52 +27,19 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      centerTitle: true,
       backgroundColor: Color(0xff171A3E),
+      leading: backButton ? const BackButton(color: Colors.white) : null,
       elevation: 0,
       actions: actions,
-      automaticallyImplyLeading: true,
-      leadingWidth: 50,
-      leading: backButton
-          ? InkWell(
-              onTap: onTap,
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Image.asset(
-                      imageStr,
-                      height: 15,
-                      width: 15,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 3,
-                  ),
-                  Text(
-                    backButtonText == true ? back : "",
-                    style: const TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xff004545),
-                    ),
-                  )
-                ],
-              ))
-          : null,
-      title: Align(
-          alignment: Alignment.center,
-          child: Text(
-            text,
-            style: TextStyle(
-              fontSize: fontText,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
-          )),
+      title: Text(
+        text,
+        style: TextStyle(
+          fontSize: fontText,
+          fontWeight: FontWeight.w700,
+          color: Colors.white,
+        ),
+      ),
     );
   }
 

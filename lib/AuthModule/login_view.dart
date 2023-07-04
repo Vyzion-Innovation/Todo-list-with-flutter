@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:to_do_list/AuthModule/forgotPasswordScreen.dart';
 
 import '../CustomWidgets/constant_widgets.dart';
 import '../CustomWidgets/customTextField.dart';
@@ -114,10 +115,11 @@ class _LoginViewState extends State<LoginView> {
                                 child: TextButton(
                                   onPressed: () {
                                     // ignore: todo
-                                    // Navigator.push(
-                                    //     context,
-                                    //     MaterialPageRoute(
-                                    //         builder: (_) => const ForgetPasswordView()));
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (_) =>
+                                                const ForgotPasswordScreen()));
                                   },
                                   child: const Align(
                                     alignment: Alignment.topRight,

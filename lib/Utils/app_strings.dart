@@ -3,13 +3,17 @@ const passwordStr = 'Enter your password';
 const nameStr = 'Enter your full name';
 const selectProfile = 'Select your profile';
 const reenterPwd = 'Re-enter your password';
-
 const navigationText = "Todo List";
 const loginitle = "Welcome back! \n Let's get you sign in";
 const signUpTitle = "Let's get you registered";
 const forgotPwd = "Forgot Password?";
 const signIn = "Sign In";
 const register = "Register";
+const forgetTitle = 'Forgot your password?';
+const emailForgotHint = 'Enter your registered email address';
+const forgotSubHeader =
+    'Please enter your email address. We will shortly send you a code to reset your password.';
+const restMyPassword = 'Reset my password';
 
 const signFB = "Sign in with Facebook";
 const signgoogle = "Sign in with Google";

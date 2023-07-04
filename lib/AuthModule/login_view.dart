@@ -33,7 +33,7 @@ class _LoginViewState extends State<LoginView> {
           fontText: 15,
           onTap: () => {Navigator.pop(context)},
         ),
-        backgroundColor: Color(0xffF5F5F5),
+        backgroundColor: const Color(0xffF5F5F5),
         body: SafeArea(
           child: Stack(
             children: [
@@ -111,55 +111,26 @@ class _LoginViewState extends State<LoginView> {
                                   top: 10, right: 15, left: 15),
                               child: SizedBox(
                                 height: 50,
-                                child: Row(
-                                  // crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    // Container(
-                                    //   width: 200,
-                                    //   child: Theme(
-                                    //     data: ThemeData(
-                                    //         unselectedWidgetColor:
-                                    //             Colors.black),
-                                    //     child: CheckboxListTile(
-                                    //       title: Text("Keep me logged in"),
-                                    //       checkColor: Colors.white,
-                                    //       activeColor: const Color(0xff2BBDBC),
-                                    //       value: false,
-                                    //       onChanged: (newValue) {
-                                    //         setState(() {
-                                    //           // agree = newValue ?? false;
-                                    //         });
-                                    //       },
-                                    //       controlAffinity:
-                                    //           ListTileControlAffinity.leading,
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                    // Spacer(),
-                                    TextButton(
-                                      onPressed: () {
-                                        // ignore: todo
-                                        // Navigator.push(
-                                        //     context,
-                                        //     MaterialPageRoute(
-                                        //         builder: (_) => const ForgetPasswordView()));
-                                      },
-                                      child: const Align(
-                                        alignment: Alignment.topRight,
-                                        child: Text(
-                                          forgotPwd,
-                                          // textAlign: TextAlign.right,
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.w500,
-                                            fontSize: 13,
-                                            color: Color(0xff555555),
-                                          ),
-                                        ),
+                                child: TextButton(
+                                  onPressed: () {
+                                    // ignore: todo
+                                    // Navigator.push(
+                                    //     context,
+                                    //     MaterialPageRoute(
+                                    //         builder: (_) => const ForgetPasswordView()));
+                                  },
+                                  child: const Align(
+                                    alignment: Alignment.topRight,
+                                    child: Text(
+                                      forgotPwd,
+                                      // textAlign: TextAlign.right,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 13,
+                                        color: Color(0xff555555),
                                       ),
                                     ),
-                                  ],
+                                  ),
                                 ),
                               ),
                             ),

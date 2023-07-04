@@ -31,7 +31,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 0,
       actions: actions,
       automaticallyImplyLeading: true,
-      leadingWidth: 120,
+      leadingWidth: 50,
       leading: backButton
           ? InkWell(
               onTap: onTap,
@@ -46,6 +46,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                       imageStr,
                       height: 15,
                       width: 15,
+                      color: Colors.white,
                     ),
                   ),
                   const SizedBox(

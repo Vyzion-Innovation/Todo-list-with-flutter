@@ -1,12 +1,16 @@
 const emailHint = 'Enter your email';
 const passwordStr = 'Enter your password';
+const nameStr = 'Enter your full name';
+const selectProfile = 'Select your profile';
+const reenterPwd = 'Re-enter your password';
 
 const navigationText = "Todo List";
 const loginitle = "Welcome back! \n Let's get you sign in";
-const country = "Country";
+const signUpTitle = "Let's get you registered";
 const forgotPwd = "Forgot Password?";
-const signIn = "Sign in";
-const signApple = "Sign in with Apple";
+const signIn = "Sign In";
+const register = "Register";
+
 const signFB = "Sign in with Facebook";
 const signgoogle = "Sign in with Google";
 

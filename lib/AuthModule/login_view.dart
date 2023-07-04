@@ -1,6 +1,3 @@
-import 'dart:io';
-
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do_list/AuthModule/forgotPasswordScreen.dart';
 

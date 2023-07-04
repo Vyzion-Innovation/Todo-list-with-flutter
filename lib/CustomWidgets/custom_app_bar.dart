@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../Utils/app_images.dart';
-import '../Utils/app_strings.dart';
 
 // ignore: must_be_immutable
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -28,7 +27,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      backgroundColor: Color(0xff171A3E),
+      backgroundColor: const Color(0xff171A3E),
       leading: backButton ? const BackButton(color: Colors.white) : null,
       elevation: 0,
       actions: actions,
